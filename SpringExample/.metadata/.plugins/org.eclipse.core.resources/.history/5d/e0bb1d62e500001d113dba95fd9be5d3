@@ -1,0 +1,17 @@
+package com.sonata.springdemo1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.sonata.springdemo1.impl.Add;
+
+@SpringBootApplication
+public class Springdemo1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Springdemo1Application.class, args);
+		Addition add = new Add();
+		System.out.println(add.add(30, 40));
+	}
+
+}

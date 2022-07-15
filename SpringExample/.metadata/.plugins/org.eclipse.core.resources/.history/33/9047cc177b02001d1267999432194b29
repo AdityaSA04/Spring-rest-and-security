@@ -1,0 +1,13 @@
+package com.sonata.formexample;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/demo")
+public class FormController {
+	@RequestMapping("/form")
+	public String showForm() {
+		return "formdisplay";
+	}
+}

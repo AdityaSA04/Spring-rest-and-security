@@ -1,0 +1,13 @@
+package com.sonata.demospring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/helloworld")
+public class MyController {
+	public String sayHello() {
+
+	return "hello";
+}
+}

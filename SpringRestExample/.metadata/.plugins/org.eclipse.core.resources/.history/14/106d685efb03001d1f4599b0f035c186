@@ -1,0 +1,5 @@
+package com.sonata.interceptor;
+
+public class LogTimeInterceptor {
+
+}

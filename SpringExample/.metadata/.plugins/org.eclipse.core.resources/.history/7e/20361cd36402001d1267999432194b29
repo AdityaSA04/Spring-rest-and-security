@@ -1,0 +1,22 @@
+package com.sonata.springdemo;
+import com.sonata.springdemo.impl.*;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.sonata.springdemo.impl.Add;
+
+@SpringBootApplication
+public class SpringdemoApplication {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext cxt = SpringApplication.run(SpringdemoApplication.class, args);
+		AddressBook book1 = (AddressBook) cxt.getBean("addressBook");
+		AddressBook book2 = (AddressBook) cxt.getBean("addressBook");
+		Address addr = (Address) cxt.getBean("address");
+		System.out.println(book1);
+		System.out.println(book2);
+	}
+
+}

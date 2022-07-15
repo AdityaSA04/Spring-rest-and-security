@@ -1,0 +1,15 @@
+package com.sonata.restexample;
+import java.util.List;
+import org.springframework.web.bind.annotation.RestController;
+import java.util.ArrayList;
+@RestController
+public class AlienResource {
+	
+	public List<alien> getAliens(){
+		List<alien>aliens = new ArrayList<>();
+		Alien a1 = new Alien();
+		a1.setId(3);
+		a1.setName("Alien");
+		a1.
+	}
+}

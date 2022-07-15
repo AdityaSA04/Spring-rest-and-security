@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans   
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+   	<bean id = "add" class = "com.sonata.springdemo.impl.Add" scope = "prototype"></bean>
+   	
+   	<bean id="emp" name="abc,def" class = "com.sonata.employee" >
+   		<property name="eid" value="123"></property>	
+   		<property name="ename" value="Aditya"></property>	
+   		<property name="eaddress" value="Bangalore"></property>	
+   	</bean>
+   	
+</beans>

@@ -1,0 +1,25 @@
+package com.sonata.formexample;
+
+import org.springframework.stereotype.Controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class FormController {
+	@RequestMapping("/form")
+	public String showForm() 
+	{
+		return "form";
+	}
+	@RequestMapping(path="/procesform", method=RequestMethod.POST)
+	public String handleForm(@RequestParam("name") String name, @RequestParam("uname") String username, @RequestParam("pass") String password) {
+		System.out.println("The user name is: "+ username);
+		System.out.println("Name of the person is: "+ name);
+		System.out.println("The password is: "+ password);
+		
+		return "";
+	}
+	
+}

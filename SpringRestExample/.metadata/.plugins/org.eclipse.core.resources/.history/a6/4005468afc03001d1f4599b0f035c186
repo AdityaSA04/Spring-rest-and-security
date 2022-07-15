@@ -1,0 +1,19 @@
+package com.sonata.interceptor;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.HandlerInterceptor;
+@Component
+public class LogTimeInterceptor implements HandlerInterceptor {
+	public boolean preHandle(HttpServletRequest request,HttpServletResponse response, Object source) {
+		return true;
+	}
+	public void postHandle(HttpServletRequest request,HttpServletResponse response, Object source) {
+		
+	}
+	public void afterCompletion(HttpServletRequest request,HttpServletResponse response, Object source) {
+	
+}
+}

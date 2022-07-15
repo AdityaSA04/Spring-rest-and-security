@@ -1,0 +1,13 @@
+package com.sonata.interceptor.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.sonata.interceptor.LogTimeInterceptor;
+@Configuration
+public class IntercepterConfig implements WebMvcConfigurer{ 
+	public void addInerceptors(InterceptorRegistry registry) {
+		registry.addInterceptor(new LogTimeInterceptor()).addPathPatterns("/");
+	}
+}

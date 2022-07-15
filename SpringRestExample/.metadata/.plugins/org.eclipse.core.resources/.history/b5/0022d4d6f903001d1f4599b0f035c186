@@ -1,0 +1,11 @@
+package com.sonata.interceptor.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class EmployeeController {
+	
+	public String getEmployee() {
+		return "Employee Details fetched";
+	}
+}

@@ -1,0 +1,16 @@
+package com.sonata.demospring.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+@RequestMapping("/helloworld")
+public class MyController {
+	@RequestMapping(method=RequestMethod.GET)
+	public String sayHello(ModelMap modelMap) {
+	modelMap.addAttribute("message1","Aditya S A");
+	return "hello";
+}
+}

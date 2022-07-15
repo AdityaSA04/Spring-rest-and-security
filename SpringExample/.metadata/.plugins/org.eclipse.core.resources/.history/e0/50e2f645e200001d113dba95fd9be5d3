@@ -1,0 +1,5 @@
+package com.sonata.springdemo;
+
+public interface Addition {
+
+}
